@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+
+button {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+
+.user-interact {
+    padding: 0;
+}
+
+.user-interact p {
+    margin-bottom: 2px;
+}
+
+.user-interact input {
+    padding: 5px;
+    width: 150px;
+    font-size: 8px;
+}
+
+#idade {
+    width: 30px;
+}
+
+hr {
+    margin: 10px auto 10px auto;
+}
+
+#mensagem, #resposta {
+    color: green;
+}

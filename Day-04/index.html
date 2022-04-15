@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7DaysOfCode</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">    
+</head>
+
+<body>
+    <div class="header">
+        <p class="title">Acha que é capaz de advinhar o número que o computador está pensando?🤔</p>
+        <p class="subtitle">Então vamos lá! Chute um número de <strong>0</strong> à <strong>10</strong></p>
+    </div>
+
+    <div class="user-interact">
+        <input type="number" min="0" max="10" id="num_jogador" placeholder="...">
+        <button type="submit" onClick="verificarChute()">Chutar</button>
+    </div>
+
+    <div id="result"></div>
+    <div id="tentativas">Você tem <strong>3</strong> tentativa(s)</div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

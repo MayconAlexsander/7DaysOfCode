@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7DaysOfCode</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">    
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 class="title">Minha lista de compras🛒</h1>
+        <h4 class="subtitle">Adicione itens à sua lista</h4>
+    </div>
+
+    <div class="user-interact">
+
+        <div class="bloco" id="bloco-1">
+            <div class="bloco-header">
+                <label>Você deseja <span style="color: #00FF00;">ADICIONAR</span> um produto em sua lista de compras?</label>
+            </div>
+            
+            <div class="bloco-body">
+                <input type="radio" name="submit-bloco1" id="radio-sim" value="sim">Sim</input>
+                <input type="radio" name="submit-bloco1" id="radio-nao" value="nao">Não</input>
+                <button type="submit" onclick="submitBloco1()">Próximo ⬇</button>
+            </div>
+
+            <div id="caso-nao"></div>
+        </div>
+
+        <div class="bloco" id="caso-remover"></div>
+        
+        <div class="bloco hidden" id="bloco-2">
+            <div class="bloco-header">
+                <label>Insira o nome do produto:</label>
+            </div>
+            
+            <div class="bloco-body">
+                <input type="text" id="nome_produto" placeholder="Ex.: Leite em pó">
+                <button type="submit" onclick="submitBloco2()">Próximo ⬇</button>
+            </div>
+
+            <div class="revisao"></div>
+        </div>
+
+        <div class="bloco hidden" id="bloco-3">
+            <div class="bloco-header">
+                <label>Selecione a categoria do produto:</label>
+            </div>
+            
+            <div class="bloco-body">
+                <select id="categorias">
+                    <option value="">Selecione uma categoria</option>
+                    <option value="Frutas">Frutas</option>
+                    <option value="Hortalíças">Hortaliças</option>
+                    <option value="Laticínios">Laticínios</option>
+                    <option value="Congelados">Congelados</option>
+                    <option value="Doces">Doces</option>
+                    <option value="Bebidas">Bebidas</option>
+                    <option value="Massas">Massas</option>
+                    <option value="Limpeza">Limpeza</option>
+                    <option value="Banho">Banho</option>
+                </select>
+                <button type="submit" onclick="submitBloco3()">Próximo ⬇</button>
+            </div>
+
+            <div class="revisao"></div>
+        </div>
+
+        <center><button type="submit" id="btn-gerar_lista" class="hidden" onclick="submitBtnGerarLista()">GERAR MINHA LISTA DE COMPRAS ✔</button></center>
+
+        <table id="lista-compras">
+
+            <thead>
+                <tr>
+                    <th colspan="1">🔵 Produto</th>
+                    <th colspan="1">🟠 Categoria</th>
+                </tr>
+            </thead>
+
+            <tbody id="compras">
+                
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
