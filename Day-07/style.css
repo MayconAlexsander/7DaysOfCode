@@ -11,7 +11,7 @@ body {
     text-align: center;
 }
 
-button {
+button, input {
     width: 50px;
     height: 50px;
     font-family: 'Audiowide', cursive;
@@ -21,7 +21,7 @@ button {
     box-shadow: 2px 2px 2px black;
 }
 
-button:hover {
+button:hover, input:hover {
     cursor: pointer;
 }
 
@@ -85,11 +85,11 @@ button:hover {
     max-width: min-content;
 }
 
-.numeros button, .operacoes button {
+.numeros input, .numeros button, .operacoes button {
     margin-bottom: 10px;
 }
 
-.numeros button {
+.numeros input, .numeros button {
     color: white;
     background-color: #585d5f; /*#636e72*/
 }
