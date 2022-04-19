@@ -1,0 +1,7 @@
+function calcular() {
+
+}
+
+function apagarTudo() {
+    
+}
