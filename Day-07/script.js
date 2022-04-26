@@ -128,4 +128,6 @@ function calcular() {
 // Botão -> CE
 function apagarTudo() {
     
+    visor.innerText = "000000000"
+
 }
