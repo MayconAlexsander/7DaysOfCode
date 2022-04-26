@@ -8,6 +8,12 @@ const number_6 = document.getElementById("botao-6")
 const number_7 = document.getElementById("botao-7")
 const number_8 = document.getElementById("botao-8")
 const number_9 = document.getElementById("botao-9")
+
+const soma = document.getElementById("soma").value
+const subtracao = document.getElementById("subtracao").value
+const multiplicacao = document.getElementById("multiplicacao").value
+const divisao = document.getElementById("divisao").value
+
 const visor = document.querySelector(".visor span")
 
 number_0.addEventListener("click", function () {
