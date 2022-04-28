@@ -18,7 +18,7 @@ const divisao = document.getElementById("divisao")
 
 number_0.addEventListener("click", function () {
     
-    if (visor.innerHTML == "000000000") {
+    if (visor.innerHTML == "0000000000") {
         visor.innerText = ""
         visor.innerText += "0"
     } else {
@@ -29,7 +29,7 @@ number_0.addEventListener("click", function () {
 
 number_1.addEventListener("click", function () {
     
-    if (visor.innerHTML == "000000000") {
+    if (visor.innerHTML == "0000000000") {
         visor.innerText = ""
         visor.innerText += "1"
     } else {
@@ -40,7 +40,7 @@ number_1.addEventListener("click", function () {
 
 number_2.addEventListener("click", function () {
         
-    if (visor.innerHTML == "000000000") {
+    if (visor.innerHTML == "0000000000") {
         visor.innerText = ""
         visor.innerText += "2"
     } else {
@@ -51,7 +51,7 @@ number_2.addEventListener("click", function () {
 
 number_3.addEventListener("click", function () {
         
-    if (visor.innerHTML == "000000000") {
+    if (visor.innerHTML == "0000000000") {
         visor.innerText = ""
         visor.innerText += "3"
     } else {
@@ -62,7 +62,7 @@ number_3.addEventListener("click", function () {
 
 number_4.addEventListener("click", function () {
         
-    if (visor.innerHTML == "000000000") {
+    if (visor.innerHTML == "0000000000") {
         visor.innerText = ""
         visor.innerText += "4"
     } else {
@@ -73,7 +73,7 @@ number_4.addEventListener("click", function () {
 
 number_5.addEventListener("click", function () {
         
-    if (visor.innerHTML == "000000000") {
+    if (visor.innerHTML == "0000000000") {
         visor.innerText = ""
         visor.innerText += "5"
     } else {
@@ -84,7 +84,7 @@ number_5.addEventListener("click", function () {
 
 number_6.addEventListener("click", function () {
         
-    if (visor.innerHTML == "000000000") {
+    if (visor.innerHTML == "0000000000") {
         visor.innerText = ""
         visor.innerText += "6"
     } else {
@@ -95,7 +95,7 @@ number_6.addEventListener("click", function () {
 
 number_7.addEventListener("click", function () {
         
-    if (visor.innerHTML == "000000000") {
+    if (visor.innerHTML == "0000000000") {
         visor.innerText = ""
         visor.innerText += "7"
     } else {
@@ -106,7 +106,7 @@ number_7.addEventListener("click", function () {
 
 number_8.addEventListener("click", function () {
         
-    if (visor.innerHTML == "000000000") {
+    if (visor.innerHTML == "0000000000") {
         visor.innerText = ""
         visor.innerText += "8"
     } else {
@@ -117,7 +117,7 @@ number_8.addEventListener("click", function () {
 
 number_9.addEventListener("click", function () {
         
-    if (visor.innerHTML == "000000000") {
+    if (visor.innerHTML == "0000000000") {
         visor.innerText = ""
         visor.innerText += "9"
     } else {
@@ -132,7 +132,7 @@ soma.addEventListener("click", function () {
 
     const lastCharacter = Number(visor.innerText.slice(-1))
     
-    if (!isNaN(lastCharacter) && visor.innerHTML != "000000000") {
+    if (!isNaN(lastCharacter) && visor.innerHTML != "0000000000") {
         visor.innerText += "+"
     }
 
@@ -142,7 +142,7 @@ subtracao.addEventListener("click", function () {
     
     const lastCharacter = Number(visor.innerText.slice(-1))
     
-    if (!isNaN(lastCharacter) && visor.innerHTML != "000000000") {
+    if (!isNaN(lastCharacter) && visor.innerHTML != "0000000000") {
         visor.innerText += "-"
     }
 
@@ -152,7 +152,7 @@ multiplicacao.addEventListener("click", function () {
     
     const lastCharacter = Number(visor.innerText.slice(-1))
     
-    if (!isNaN(lastCharacter) && visor.innerHTML != "000000000") {
+    if (!isNaN(lastCharacter) && visor.innerHTML != "0000000000") {
         visor.innerText += "×"
     }
 
@@ -162,7 +162,7 @@ divisao.addEventListener("click", function () {
     
     const lastCharacter = Number(visor.innerText.slice(-1))
     
-    if (!isNaN(lastCharacter) && visor.innerHTML != "000000000") {
+    if (!isNaN(lastCharacter) && visor.innerHTML != "0000000000") {
         visor.innerText += "÷"
     }
 
