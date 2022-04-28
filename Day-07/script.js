@@ -132,7 +132,7 @@ soma.addEventListener("click", function () {
 
     const lastCharacter = Number(visor.innerText.slice(-1))
     
-    if (!isNaN(lastCharacter)) {
+    if (!isNaN(lastCharacter) && visor.innerHTML != "000000000") {
         visor.innerText += "+"
     }
 
@@ -142,7 +142,7 @@ subtracao.addEventListener("click", function () {
     
     const lastCharacter = Number(visor.innerText.slice(-1))
     
-    if (!isNaN(lastCharacter)) {
+    if (!isNaN(lastCharacter) && visor.innerHTML != "000000000") {
         visor.innerText += "-"
     }
 
@@ -152,7 +152,7 @@ multiplicacao.addEventListener("click", function () {
     
     const lastCharacter = Number(visor.innerText.slice(-1))
     
-    if (!isNaN(lastCharacter)) {
+    if (!isNaN(lastCharacter) && visor.innerHTML != "000000000") {
         visor.innerText += "×"
     }
 
@@ -162,7 +162,7 @@ divisao.addEventListener("click", function () {
     
     const lastCharacter = Number(visor.innerText.slice(-1))
     
-    if (!isNaN(lastCharacter)) {
+    if (!isNaN(lastCharacter) && visor.innerHTML != "000000000") {
         visor.innerText += "÷"
     }
 
