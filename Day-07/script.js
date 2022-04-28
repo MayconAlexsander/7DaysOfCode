@@ -1,3 +1,5 @@
+const visor = document.querySelector(".visor span")
+
 const number_0 = document.getElementById("botao-0")
 const number_1 = document.getElementById("botao-1")
 const number_2 = document.getElementById("botao-2")
@@ -9,12 +11,10 @@ const number_7 = document.getElementById("botao-7")
 const number_8 = document.getElementById("botao-8")
 const number_9 = document.getElementById("botao-9")
 
-const soma = document.getElementById("soma").value
-const subtracao = document.getElementById("subtracao").value
-const multiplicacao = document.getElementById("multiplicacao").value
-const divisao = document.getElementById("divisao").value
-
-const visor = document.querySelector(".visor span")
+const soma = document.getElementById("soma")
+const subtracao = document.getElementById("subtracao")
+const multiplicacao = document.getElementById("multiplicacao")
+const divisao = document.getElementById("divisao")
 
 number_0.addEventListener("click", function () {
     
@@ -124,6 +124,56 @@ number_9.addEventListener("click", function () {
         visor.innerText += "9"
     }
     
+})
+
+
+
+soma.addEventListener("click", function () {
+
+    const lastCharacter = visor.innerText.slice(-1)
+    
+    if (Number(lastCharacter) === NaN) {
+        alert("ação impedida")
+    } else {
+        visor.innerText += "+"
+    }
+
+})
+
+subtracao.addEventListener("click", function () {
+    
+    const lastCharacter = visor.innerText.slice(-1)
+    
+    if (Number(lastCharacter) === NaN) {
+        alert("ação impedida")
+    } else {
+        visor.innerText += "-"
+    }
+
+})
+
+multiplicacao.addEventListener("click", function () {
+    
+    const lastCharacter = visor.innerText.slice(-1)
+    
+    if (Number(lastCharacter) === NaN) {
+        alert("ação impedida")
+    } else {
+        visor.innerText += "×"
+    }
+
+})
+
+divisao.addEventListener("click", function () {
+    
+    const lastCharacter = visor.innerText.slice(-1)
+    
+    if (Number(lastCharacter) === NaN) {
+        alert("ação impedida")
+    } else {
+        visor.innerText += "÷"
+    }
+
 })
 
 // Botão -> =
