@@ -130,11 +130,9 @@ number_9.addEventListener("click", function () {
 
 soma.addEventListener("click", function () {
 
-    const lastCharacter = visor.innerText.slice(-1)
+    const lastCharacter = Number(visor.innerText.slice(-1))
     
-    if (Number(lastCharacter) === NaN) {
-        alert("ação impedida")
-    } else {
+    if (!isNaN(lastCharacter)) {
         visor.innerText += "+"
     }
 
@@ -142,11 +140,9 @@ soma.addEventListener("click", function () {
 
 subtracao.addEventListener("click", function () {
     
-    const lastCharacter = visor.innerText.slice(-1)
+    const lastCharacter = Number(visor.innerText.slice(-1))
     
-    if (Number(lastCharacter) === NaN) {
-        alert("ação impedida")
-    } else {
+    if (!isNaN(lastCharacter)) {
         visor.innerText += "-"
     }
 
@@ -154,11 +150,9 @@ subtracao.addEventListener("click", function () {
 
 multiplicacao.addEventListener("click", function () {
     
-    const lastCharacter = visor.innerText.slice(-1)
+    const lastCharacter = Number(visor.innerText.slice(-1))
     
-    if (Number(lastCharacter) === NaN) {
-        alert("ação impedida")
-    } else {
+    if (!isNaN(lastCharacter)) {
         visor.innerText += "×"
     }
 
@@ -166,11 +160,9 @@ multiplicacao.addEventListener("click", function () {
 
 divisao.addEventListener("click", function () {
     
-    const lastCharacter = visor.innerText.slice(-1)
+    const lastCharacter = Number(visor.innerText.slice(-1))
     
-    if (Number(lastCharacter) === NaN) {
-        alert("ação impedida")
-    } else {
+    if (!isNaN(lastCharacter)) {
         visor.innerText += "÷"
     }
 
