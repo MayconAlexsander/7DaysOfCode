@@ -168,14 +168,19 @@ divisao.addEventListener("click", function () {
 
 })
 
-// Botão -> =
-function calcular() {
-
+// Botão delete
+function apagarCaractere() {
+    
 }
 
 // Botão -> CE
 function apagarTudo() {
     
-    visor.innerText = "000000000"
+    visor.innerText = "0000000000"
+
+}
+
+// Botão -> =
+function calcular() {
 
 }
