@@ -1,6 +1,6 @@
 const visor = document.querySelector(".visor span")
 
-const ponto = document.getElementById("botao-ponto")
+const btn_ponto = document.getElementById("botao-ponto")
 
 const number_0 = document.getElementById("botao-0")
 const number_1 = document.getElementById("botao-1")
@@ -19,7 +19,15 @@ const multiplicacao = document.getElementById("multiplicacao")
 const divisao = document.getElementById("divisao")
 
 
+btn_ponto.addEventListener("click", function () {
 
+    const lastCharacter = Number(visor.innerText.slice(-1))
+
+    if (visor.innerHTML != "0000000000" && !isNaN(lastCharacter)) {
+        visor.innerText += "."
+    }
+
+})
 
 
 number_0.addEventListener("click", function () {
