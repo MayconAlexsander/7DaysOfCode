@@ -16,12 +16,16 @@ const subtracao = document.getElementById("subtracao")
 const multiplicacao = document.getElementById("multiplicacao")
 const divisao = document.getElementById("divisao")
 
+
+
 number_0.addEventListener("click", function () {
     
+    const lastCharacter = Number(visor.innerText.slice(-1))
+
     if (visor.innerHTML == "0000000000") {
         visor.innerText = ""
         visor.innerText += "0"
-    } else {
+    } else if (lastCharacter != "0") {
         visor.innerText += "0"
     }
     
@@ -168,9 +172,14 @@ divisao.addEventListener("click", function () {
 
 })
 
+
+
 // Botão delete
 function apagarCaractere() {
-    
+
+    // visor.innerText = visor.innerText - visor.innerText.slice(-1)
+    // splice(-1, 1)
+
 }
 
 // Botão -> CE
