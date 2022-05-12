@@ -1,5 +1,7 @@
 const visor = document.querySelector(".visor span")
 
+const ponto = document.getElementById("botao-ponto")
+
 const number_0 = document.getElementById("botao-0")
 const number_1 = document.getElementById("botao-1")
 const number_2 = document.getElementById("botao-2")
@@ -15,6 +17,8 @@ const soma = document.getElementById("soma")
 const subtracao = document.getElementById("subtracao")
 const multiplicacao = document.getElementById("multiplicacao")
 const divisao = document.getElementById("divisao")
+
+
 
 
 
