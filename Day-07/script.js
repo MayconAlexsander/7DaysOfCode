@@ -220,3 +220,14 @@ function calcular() {
     visor.innerText = eval(expressao)
 
 }
+
+// PENDENTE:
+
+/*
+    ->> corrigir comportamento que faz o apagarCaractere() dar preferência aos números quando existe pontos (.) na expressão
+    ->> tratar erro que impede o calculo ao sobrar um operador matemático no final
+    ->> não deixar visor vazio ao apagar todos os caracteres
+    ->> deixar a calculadora transbordar para fora da tela quando diminuída a resolução
+    ->> resetar o visor ao inserir um número logo após o resultado de uma expressão
+    ->> corrigir transbordamento de números para fora do visor
+*/
