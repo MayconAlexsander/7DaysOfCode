@@ -19,6 +19,7 @@ const multiplicacao = document.getElementById("multiplicacao")
 const divisao = document.getElementById("divisao")
 
 
+
 btn_ponto.addEventListener("click", function () {
 
     const lastCharacter = Number(visor.innerText.slice(-1))
@@ -28,7 +29,6 @@ btn_ponto.addEventListener("click", function () {
     }
 
 })
-
 
 number_0.addEventListener("click", function () {
     
@@ -189,9 +189,19 @@ divisao.addEventListener("click", function () {
 // Botão delete
 function apagarCaractere() {
 
-    // visor.innerText = visor.innerText - visor.innerText.slice(-1)
-    // splice(-1, 1)
+    const lastCharacter = visor.innerText.slice(-1)
+    
+    if (lastCharacter == "") {
+        visor.innerText = "0000000000"
+    } else if (visor.innerText != "0000000000") {
+        visor.innerText = visor.innerText.replace(lastCharacter, "")
+    }
 
+    /* 
+        Alternativas: 
+        ->> visor.innerText = visor.innerText - visor.innerText.slice(-1)
+        ->> splice(-1, 1)
+    */
 }
 
 // Botão -> CE
