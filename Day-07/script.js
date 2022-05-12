@@ -186,12 +186,12 @@ divisao.addEventListener("click", function () {
 
 
 
-// Botão delete
+// Botão -> delete
 function apagarCaractere() {
 
     const lastCharacter = visor.innerText.slice(-1)
     
-    if (lastCharacter == "") {
+    if (visor.innerText == "") {
         visor.innerText = "0000000000"
     } else if (visor.innerText != "0000000000") {
         visor.innerText = visor.innerText.replace(lastCharacter, "")
@@ -205,13 +205,18 @@ function apagarCaractere() {
 }
 
 // Botão -> CE
-function apagarTudo() {
-    
+function apagarTudo() { 
     visor.innerText = "0000000000"
-
 }
 
 // Botão -> =
 function calcular() {
+
+    const expressao = 
+    visor.innerText
+    .replace(/×/g, "*")
+    .replace(/÷/g, "/")
+
+    visor.innerText = eval(expressao)
 
 }
