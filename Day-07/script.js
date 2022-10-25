@@ -230,4 +230,5 @@ function calcular() {
     ->> deixar a calculadora transbordar para fora da tela quando diminuída a resolução
     ->> resetar o visor ao inserir um número logo após o resultado de uma expressão
     ->> corrigir transbordamento de números para fora do visor
+    ->> corrigir cálculo estranho ao subtrair números inteiros de números decimais (Ex.: 3.2 - 3 = 0.20000000000000018)
 */
